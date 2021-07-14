@@ -34,5 +34,6 @@ public class StartPanel : MonoBehaviour
         if (left_Ani == null || right_Ani == null) return;
         left_Ani.SetBool("IsOpen", false);
         right_Ani.SetBool("IsOpen", false);
+        down_Ani.SetBool("IsOpen", false);
     }
 }
