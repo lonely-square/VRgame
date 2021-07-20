@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TianHe/TianHe.unity
+    guid: 13e5d4071cfd31f439425165e0af2b85
+  - enabled: 1
+    path: Assets/startPanel/mainGUI.unity
+    guid: bfaf0d8514f422542b43915ea485f818
   m_configObjects: {}

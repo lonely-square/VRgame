@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartPanel : MonoBehaviour
 {
@@ -8,16 +9,14 @@ public class StartPanel : MonoBehaviour
     public Animator right_Ani;
     public Animator down_Ani;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Camera;
 
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+
+
+    void LoadMainScene()
     {
-        
+        SceneManager.LoadScene("TianHe/TianHe");
     }
 
     public void OnClick_OpenDoor()
@@ -26,8 +25,11 @@ public class StartPanel : MonoBehaviour
         left_Ani.SetBool("IsOpen",true);
         right_Ani.SetBool("IsOpen", true);
         down_Ani.SetBool("IsOpen", true);
+        Invoke("LoadMainScene", 2.5f);
 
     }
+
+
 
     public void OnClick_CloseDoor()
     {

@@ -72,3 +72,4 @@ crashlytics-build.properties
 
 #建模里的大文件
 *.fbx
+*.mp4
